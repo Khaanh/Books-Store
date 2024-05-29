@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Books_Store
+namespace ClassLibrary2
 {
-    public interface IBookRepository
+    public class Class1
     {
-        Book[] GetAllByTitle(string titlePart);
     }
 }

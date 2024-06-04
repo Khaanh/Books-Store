@@ -1,4 +1,5 @@
 ﻿using Books_Store;
+using System.Linq;
 
 namespace Store.Memory
 {
@@ -13,7 +14,7 @@ namespace Store.Memory
 
         public Book[] GetAllByTitle(string titlePart)
         {
-            throw new NotImplementedException();
+            return books.Where(books => books.Title.Contains(titlePart)).ToArray();
         }
     }
 }
